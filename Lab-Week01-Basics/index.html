@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet">
+  <title>Ionic Components Basic</title>
+</head>
+<body>
+
+<ion-app>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title class="ion-text-center">Budget Planner</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content padding>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>
+          Input Pengeluaran
+        </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Nama Pengeluaran</ion-label>
+          <ion-input id="name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Jumlah Pengeluaran</ion-label>
+          <ion-input id="total" type="number"></ion-input>
+        </ion-item>
+
+        <ion-item-group class="ion-float-right ion-margin-vertical">
+          <ion-button id="clearData" color="danger" fill="outline" onclick="clearData()"><ion-icon name="close"></ion-icon>Hapus</ion-button>
+          <ion-button onclick="addData()"><ion-icon name="add"></ion-icon>Tambah</ion-button>
+        </ion-item-group>
+      </ion-card-content>
+    </ion-card>
+
+    <div id="printData"></div>
+    <br />
+    <p id="printTotalData"></p>
+  </ion-content>
+</ion-app>
+
+<script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
