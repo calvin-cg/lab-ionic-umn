@@ -1,9 +1,19 @@
+/*
+ * By Calvin Chandra Gunawan
+ * 00000012892
+ */
+
 let expenses = [];
 let totalExpenses = 0;
 
 function addData() {
     let name = document.getElementById("name").value;
     let total = document.getElementById("total").value;
+
+    if (!name || !total) {
+        presentAlert();
+        return false;
+    }
 
     let pushData = {};
     pushData.name = name;
@@ -36,3 +46,13 @@ function clearData() {
     total.value = "";
 }
 
+async function presentAlert() {
+    const alertController = document.querySelector('ion-alert-controller');
+
+    const alert = await alertController.create({
+        header: 'Terjadi Kesalahan',
+        message: 'Mohon masukkan nama dan jumlah pengeluaran.',
+        buttons: ['Tutup']
+    });
+    return await alert.present();
+}
