@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+  By Calvin Chandra Gunawan
+  00000012892
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet">
+  <link rel="stylesheet" href="theme.css">
+  <title>MySantika</title>
+</head>
+
+<body>
+
+  <ion-app>
+    <ion-tabs>
+
+      <ion-tab tab="tab-home">
+        <ion-content>
+          <ion-grid class="ion-no-padding">
+
+            <ion-row class="top-section-home ion-justify-content-center ion-align-items-end">
+              <ion-col size-xs="4" size-md="2" size-xl="2">
+                <ion-img src="assets/logo.svg"></ion-img>
+              </ion-col>
+
+              <ion-col size-xs="8" size-md="4" size-xl="2" class="ion-text-right ion-padding-end">
+                <ion-icon name="contact" color="white" size="large"></ion-icon>
+                <ion-text color="white">
+                  <p class="ion-no-margin">Register / Login</p>
+                </ion-text>
+              </ion-col>
+
+              <ion-col size="12"></ion-col>
+
+              <ion-col class="form-home" size-xs="12" size-md="6" size-xl="4">
+                <ion-card class="ion-padding-horizontal" color="white">
+                  <ion-row>
+                    <ion-col size="12">
+                      <ion-row class="ion-align-items-center border-bottom">
+                        <ion-col size="2">
+                          <ion-icon name="pin" color="light" size="large"></ion-icon>
+                        </ion-col>
+                        <ion-col size="10">
+                          <ion-input placeholder="Discover Hotel or Location">
+                          </ion-input>
+                        </ion-col>
+                      </ion-row>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row>
+                    <ion-col size="12" class="border-bottom">
+                      <ion-row class="ion-align-items-center">
+                        <ion-col size="2">
+                          <ion-icon name="calendar" color="light" size="large"></ion-icon>
+                        </ion-col>
+                        <ion-col size="6" class="border-right">
+                          <ion-label color="medium" style="padding-left: 8px;">Check In</ion-label>
+                          <ion-datetime value="2019-08-17" display-format="DDD, MMM DD" style="padding-left: 8px;">
+                          </ion-datetime>
+                        </ion-col>
+                        <ion-col size="4">
+                          <ion-label color="medium" style="padding-left: 8px;">Duration</ion-label>
+                          <ion-select value="1" style="padding-left: 8px;">
+                            <ion-select-option value="1">1 Night</ion-select-option>
+                            <ion-select-option value="2">2 Nights</ion-select-option>
+                            <ion-select-option value="3">3 Nights</ion-select-option>
+                            <ion-select-option value="4">4 Nights</ion-select-option>
+                          </ion-select>
+                        </ion-col>
+                      </ion-row>
+                    </ion-col>
+                  </ion-row>
+
+                  <ion-row>
+                    <ion-col size="12">
+                      <ion-row class="ion-align-items-center">
+                        <ion-col size="2">
+                          <ion-icon name="bed" color="light" size="large"></ion-icon>
+                        </ion-col>
+                        <ion-col size="6">
+                          <ion-label color="medium" style="padding-left: 8px;">Room</ion-label>
+                          <ion-select value="1" style="padding-left: 8px;">
+                            <ion-select-option value="1">1 Room, 1 Guest</ion-select-option>
+                            <ion-select-option value="2">1 Room, 2 Guests</ion-select-option>
+                            <ion-select-option value="3">2 Room, 2 Guests</ion-select-option>
+                            <ion-select-option value="4">2 Room, 3 Guests</ion-select-option>
+                            <ion-select-option value="5">2 Room, 4 Guests</ion-select-option>
+                          </ion-select>
+                        </ion-col>
+                        <ion-col size="4">
+                          <ion-button class="button-search" expand="block" color="success">Search</ion-button>
+                        </ion-col>
+                      </ion-row>
+                    </ion-col>
+                  </ion-row>
+                </ion-card>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size-xs="12" size-md="6" size-xl="4">
+                <ion-row>
+                  <ion-col size="12" style="padding: 0px 13px">
+                    <h4>Special Offers for You</h4>
+                    <ion-text color="medium">
+                      <h6>Find great deals in our promotion</h6>
+                    </ion-text>
+                  </ion-col>
+
+                  <ion-col size="12">
+                    <ion-slides>
+                      <ion-slide>
+                        <ion-row>
+                          <ion-col size="12">
+                            <img src="assets/promo1.jpg"></img>
+                          </ion-col>
+                          <h6 style="padding: 0px 5px"><b>Best Flexible Rate</b></h6>
+                          <ion-text color="medium" class="ion-text-left" style="padding: 0px 5px">
+                            <h6>Planning your trip ahead and worry that the schedule might changed?</h6>
+                          </ion-text>
+                        </ion-row>
+                      </ion-slide>
+                      <ion-slide>
+                        <img src="assets/promo2.jpg"></img>
+                      </ion-slide>
+                      <ion-slide>
+                        <img src="assets/promo3.jpg"></img>
+                      </ion-slide>
+                    </ion-slides>
+                  </ion-col>
+
+                </ion-row>
+              </ion-col>
+            </ion-row>
+
+          </ion-grid>
+        </ion-content>
+      </ion-tab>
+
+      <ion-tab tab="tab-booking">
+      </ion-tab>
+
+      <ion-tab tab="tab-profile">
+      </ion-tab>
+
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="tab-home">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="tab-booking">
+          <ion-icon name="calendar"></ion-icon>
+          <ion-label>Booking</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="tab-profile">
+          <ion-icon name="contact"></ion-icon>
+          <ion-label>Profile</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+
+    </ion-tabs>
+  </ion-app>
+
+  <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+</body>
+
+</html>
