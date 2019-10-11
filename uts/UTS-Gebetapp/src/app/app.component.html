@@ -1,0 +1,35 @@
+<ion-app>
+  <ion-menu side="start" menuId="m1">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Daftar Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle routerLink="home">
+          <ion-item lines="none">
+            <ion-icon name="heart" slot="start" color="primary"></ion-icon>
+            <ion-label>Daftar Calon Gebetan</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle routerLink="target-gebetan">
+          <ion-item lines="none">
+            <ion-icon name="list-box" slot="start" color="primary"></ion-icon>
+            <ion-label>Target Gebetan</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle routerLink="profil">
+          <ion-item lines="none">
+            <ion-icon name="contact" slot="start" color="primary"></ion-icon>
+            <ion-label>Profil</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet main></ion-router-outlet>
+</ion-app>
