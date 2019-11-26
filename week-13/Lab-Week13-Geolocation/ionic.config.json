@@ -1,0 +1,7 @@
+{
+  "name": "Lab-Week13-Geolocation",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
